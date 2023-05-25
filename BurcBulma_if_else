@@ -1,0 +1,146 @@
+import java.util.Scanner;
+
+public class BurcBulma {
+    public static void main(String[] args) {
+        int gun, ay;
+        String burc = "";
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Kaçıncı ayda Doğdunuz :");
+        ay = input.nextInt();
+
+        if (ay >= 1 && ay < 13) {
+
+            System.out.print("Kaçıncı günde doğdunuz :");
+            gun = input.nextInt();
+
+            if (ay == 1) {
+                if (gun >= 1 && gun <= 21) {
+                    burc = "OĞLAK";
+                }
+                if (gun >= 22 && gun <= 31) {
+                    burc = "KOVA";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 2) {
+                if (gun >= 1 && gun <= 19) {
+                    burc = "KOVA";
+                }
+                if (gun >= 20 && gun <= 28) {
+                    burc = "BALIK";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 3) {
+                if (gun >= 1 && gun <= 20) {
+                    burc = "BALIK";
+                }
+                if (gun >= 21 && gun <= 31) {
+                    burc = "KOÇ";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 4) {
+                if (gun >= 1 && gun <= 20) {
+                    burc = "KOÇ";
+                }
+                if (gun >= 21 && gun <= 30) {
+                    burc = "BOĞA";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 5) {
+                if (gun >= 1 && gun <= 21) {
+                    burc = "BOĞA";
+                }
+                if (gun >= 22 && gun <= 31) {
+                    burc = "İKİZLER";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 6) {
+                if (gun >= 1 && gun <= 22) {
+                    burc = "İKİZLER";
+                }
+                if (gun >= 23 && gun <= 30) {
+                    burc = "YENGEÇ";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 7) {
+                if (gun >= 1 && gun <= 22) {
+                    burc = "YENGEÇ";
+                }
+                if (gun >= 23 && gun <= 31) {
+                    burc = "ASLAN";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 8) {
+                if (gun >= 1 && gun <= 22) {
+                    burc = "ASLAN";
+                }
+                if (gun >= 23 && gun <= 31) {
+                    burc = "BAŞAK";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 9) {
+                if (gun >= 1 && gun <= 22) {
+                    burc = "BAŞAK";
+                }
+                if (gun >= 23 && gun <= 30) {
+                    burc = "TERAZİ";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 10) {
+                if (gun >= 1 && gun <= 22) {
+                    burc = "TERAZİ";
+                }
+                if (gun >= 23 && gun <= 31) {
+                    burc = "AKREP";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 11) {
+                if (gun >= 1 && gun <= 21) {
+                    burc = "AKREP";
+                }
+                if (gun >= 1 && gun <= 30) {
+                    burc = "YAY";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+            if (ay == 12) {
+                if (gun >= 1 && gun <= 21) {
+                    burc = "YAY";
+                }
+                if (gun >= 22 && gun <= 31) {
+                    burc = "OĞLAK";
+                } else {
+                    System.out.println("Gün değeri aralık dışı. Tekrar giriniz");
+                }
+            }
+
+            System.out.print("Burcunuz :" + burc);
+
+
+        } else {
+            System.out.print("geçersiz ay değeri girdiniz");
+        }
+    }
+}
+
